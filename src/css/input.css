@@ -1,0 +1,38 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* The starting position of the element */
+/* .slide {
+    transform: translateX(-100%);
+  } */
+  
+  /* The animation */
+  @keyframes slideIn {
+    from {
+      transform: translateX(-100%);
+    }
+    to {
+      transform: translateX(0);
+    }
+  }
+  
+  /* Apply the animation to the element when it's in the "active" state */
+  .slidein {
+    animation: slideIn 0.5s ;
+  }
+
+  @keyframes slideOut {
+    from {
+      transform: translateX(0);
+    }
+    to {
+      transform: translateX(-100%);
+    }
+  }
+  
+  /* Apply the animation to the element when it's in the "active" state */
+  .slideout {
+    animation: slideOut 0.5s;
+  }
+  
